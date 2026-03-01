@@ -1,0 +1,21 @@
+{
+  "status": "configured",
+  "xiaohongshu": {
+    "enabled": true,
+    "topics": ["AI工具", "副业", "旅游攻略"],
+    "accounts": [],
+    "schedule": "每6小时",
+    "cron_job_id": "9f4203fa-6387-4a59-9ae9-32b369654865",
+    "output_format": "telegram"
+  },
+  "douyin": {
+    "enabled": true,
+    "accounts": [],
+    "topics": ["热门榜单"],
+    "schedule": "每6小时",
+    "cron_job_id": "21e6eeec-5ee8-45a8-8b5c-1ea4695f0b65",
+    "output_format": "telegram"
+  },
+  "last_run": null,
+  "configured_at": "2026-02-27"
+}
