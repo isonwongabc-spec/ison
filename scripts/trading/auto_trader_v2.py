@@ -18,14 +18,15 @@ from okx_trader import OKXTrader
 # Trading Configuration
 CONFIG = {
     'capital': 71.73,
-    'max_position_usd': 20,
-    'leverage': 3,
+    'max_position_usd': 30,
+    'leverage': 5,
     'stop_loss_pct': 0.02,
     'take_profit_pct': 0.06,
     'daily_max_loss_pct': 0.05,
     'symbols': ['ETH-USDT-SWAP', 'BTC-USDT-SWAP'],
     'timeframe': '4H',
     'check_interval': 300,
+    'max_concurrent_positions': 3,
 }
 
 class AutoTradingBot:

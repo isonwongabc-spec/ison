@@ -28,3 +28,12 @@ _每30分钟检查一次，主动干活。_
 ## 状态追踪
 
 查看 `memory/heartbeat-state.json` 了解上次检查时间。
+
+## 自动重连机制 (Boss要求)
+
+**规则:** 如果10分钟没有回应Boss，自动重启网关保持在线
+
+**实现方式:**
+- 每5分钟检查一次最后活跃时间
+- 如果超过10分钟无Boss消息，触发网关重启
+- 状态记录在 `memory/heartbeat-state.json` 中的 `lastBossMessageAt`

@@ -13,6 +13,11 @@ __pycache__/
 *.pyd
 .Python
 
+# Ignore build artifacts
+build/
+dist/
+*.spec
+
 # Ignore IDE files
 .vscode/
 .idea/

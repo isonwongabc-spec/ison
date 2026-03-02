@@ -1,0 +1,42 @@
+{
+    "exchanges": [
+        {
+            "name": "OKX",
+            "enabled": true,
+            "api_key": "your_okx_api_key",
+            "api_secret": "your_okx_api_secret",
+            "passphrase": "your_okx_passphrase",
+            "testnet": false,
+            "symbols": [
+                "ETH-USDT-SWAP",
+                "BTC-USDT-SWAP",
+                "SOL-USDT-SWAP",
+                "XRP-USDT-SWAP",
+                "DOGE-USDT-SWAP",
+                "ADA-USDT-SWAP",
+                "AVAX-USDT-SWAP",
+                "LINK-USDT-SWAP",
+                "MATIC-USDT-SWAP",
+                "DOT-USDT-SWAP"
+            ],
+            "max_active_symbols": 3
+        }
+    ],
+    "active_exchange": "OKX",
+    "trading_config": {
+        "timeframe": "4H",
+        "max_position_usd": 20,
+        "leverage": 3,
+        "stop_loss_percent": 2,
+        "take_profit_percent": 6,
+        "daily_max_loss_percent": 5,
+        "check_interval_seconds": 300,
+        "max_concurrent_positions": 3
+    },
+    "symbol_selection": {
+        "mode": "auto",
+        "criteria": "volume",
+        "min_volume_24h": 100000000,
+        "exclude": []
+    }
+}
