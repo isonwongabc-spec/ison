@@ -324,13 +324,13 @@ class ExchangeFactory:
 
 
 if __name__ == '__main__':
-    # Test OKX connection
+    # Test OKX connection - REPLACE WITH YOUR OWN API KEYS
     print("Testing OKX Exchange...")
     okx = ExchangeFactory.create_exchange(
         'okx',
-        '112e3b78-387e-4df7-95ee-4f92f15d7d69',
-        '4BF0777097F46740226B055B896D2CB1',
-        'Abc32421.'
+        'YOUR_API_KEY',
+        'YOUR_API_SECRET',
+        'YOUR_PASSPHRASE'
     )
     
     balance = okx.get_balance()
